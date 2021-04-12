@@ -85,7 +85,7 @@ liste=data.frame(species=unique(tab$species),Espèce=unique(tab$Espèce))
 liste$temp_index=NA
 liste$temp_var=NA
 liste$nbdatagbif=NA
-for(i in 145:nrow(liste)){
+for(i in 1:nrow(liste)){
 #STI
 liste$temp_index[i]=sum((mat[,paste(liste$Espèce[i])]/mat$sampl)*mat$temp_moy,na.rm=T)/sum((mat[,paste(liste$Espèce[i])]/mat$sampl),na.rm=T)
 #SCI
